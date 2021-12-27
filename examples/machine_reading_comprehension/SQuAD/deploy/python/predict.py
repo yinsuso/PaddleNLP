@@ -115,7 +115,7 @@ def main():
         os.path.dirname(args.model_name_or_path))
 
     if args.predict_file:
-        dataset = load_dataset('sqaud', data_files=args.predict_file)
+        dataset = load_dataset('squad', data_files=args.predict_file)
     elif args.version_2_with_negative:
         dataset = load_dataset('squad', splits='dev_v2')
     else:
